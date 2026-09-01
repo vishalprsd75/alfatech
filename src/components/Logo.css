@@ -1,0 +1,76 @@
+/* ===========================
+   AlfaTech Logo Component
+   =========================== */
+
+.logo-brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform var(--transition-fast);
+}
+
+.logo-brand:hover {
+  transform: translateY(-1px);
+}
+
+.logo-brand__img {
+  max-height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-brand__box {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: #ffffff;
+  padding: 6px 14px 6px 8px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Blue Circle with Alpha Symbol */
+.logo-brand__alpha-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0b4f8c 0%, #0284c7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: 'Times New Roman', Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+/* Text Block */
+.logo-brand__text-block {
+  display: flex;
+  flex-direction: column;
+  background: #003b73;
+  padding: 2px 10px;
+  border-radius: 4px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.logo-brand__alfa {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.logo-brand__tech {
+  color: #ef4444;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1px;
+  margin-top: 1px;
+}

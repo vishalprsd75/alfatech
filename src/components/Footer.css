@@ -1,0 +1,216 @@
+/* ===========================
+   Footer
+   =========================== */
+
+.footer {
+  background: var(--color-primary);
+  color: rgba(255, 255, 255, 0.75);
+  padding: var(--spacing-3xl) 0 0;
+  margin-top: auto;
+}
+
+.footer__container {
+  /* inherits .container */
+}
+
+/* Credentials Strip */
+.footer__credentials-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.footer__credential-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.footer__credential-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.footer__credential-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__credential-label {
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer__credential-item strong {
+  font-size: var(--font-size-sm);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.footer__credential-divider {
+  width: 1px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: var(--spacing-2xl);
+}
+
+/* Brand */
+.footer__brand {
+  max-width: 280px;
+}
+
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: var(--spacing-md);
+}
+
+.footer__logo-accent {
+  color: var(--color-accent);
+}
+
+.footer__description {
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Sections */
+.footer__heading {
+  color: #fff;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer__links a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--font-size-sm);
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.footer__links a:hover {
+  color: var(--color-accent-light);
+  transform: translateX(2px);
+}
+
+/* Contact */
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer__contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__contact li svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.footer__query-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-lg);
+  color: var(--color-accent);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.footer__query-link:hover {
+  color: var(--color-accent-light);
+  gap: var(--spacing-sm);
+}
+
+/* Bottom */
+.footer__divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin-top: var(--spacing-2xl);
+}
+
+.footer__bottom {
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+
+@media (max-width: 1024px) {
+  .footer__credentials-strip {
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+
+  .footer__credential-divider {
+    display: none;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .footer__brand {
+    max-width: none;
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding-top: var(--spacing-2xl);
+  }
+
+  .footer__credentials-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+}
