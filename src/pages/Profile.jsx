@@ -290,8 +290,8 @@ const Profile = () => {
                 Whether you&apos;re looking to upgrade your security, enhance your network, or streamline your communications, we&apos;re here to provide the solutions that make your life easier and your business more successful.
               </p>
             </div>
-            <Link to="/query" className="contact-cta-box__btn">
-              <Send size={18} />
+            <Link to="/contact" className="contact-cta-box__btn">
+              <PhoneCall size={18} />
               Reach Out To Us Today
               <ArrowRight size={16} />
             </Link>
